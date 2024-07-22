@@ -55,7 +55,7 @@ Here’s how I approached each question:
 ## 1. What are the most in-demand skills for the top 3 most popular data roles?
 To identify the most in-demand skills for the top three data roles, I filtered job positions to determine the most popular roles and extracted the top five skills for each. This analysis reveals the key skills for each prominent job title, helping to understand which skills to prioritize based on the targeted role.
 
-Link to my notebook for more details: [2_Skill_Demand](https://github.com/julielsa/Python-data-roles-analysis/blob/main/2_Skill_Demand.ipynb)
+View my notebook with detailed steps here: [2_Skill_Demand](https://github.com/julielsa/Python-data-roles-analysis/blob/main/2_Skill_Demand.ipynb)
 
 ### Visualize Data
 
@@ -82,6 +82,36 @@ plt.show()
     - Data Scientists: R (24%) and SAS (24%) are listed, which are commonly used in statistical analysis and advanced analytics, highlighting the role's focus on in-depth data analysis and modeling.
 
 ## 2. How are in-demand skills trending for Data Analysts?
+To find how skills are trending in 2023 for Data Analysts, I filtered data analyst positions and grouped the skills by the month of the job postings. This got me the top 5 skills of data analysts by month, showing how popular skills were throughout 2023.
+
+View my notebook with detailed steps here: [3_Skill_Trend](https://github.com/julielsa/Python-data-roles-analysis/blob/main/3_Skill_Trend.ipynb)
+
+### Visualize Data
+
+```python
+
+from matplotlib.ticker import PercentFormatter
+
+df_plot = df_DA_US_percent.iloc[:, :5]
+sns.lineplot(data=df_plot, dashes=False, legend='full', palette='tab10')
+
+plt.gca().yaxis.set_major_formatter(PercentFormatter(decimals=0))
+
+plt.show()
+
+```
+
+### Results
+![Trending Top Skills for Data Analysts in the US](https://github.com/julielsa/Python-data-roles-analysis/blob/main/Visualization%20images/Top%20trending%20skills.png)
+*Bar graph visualizing the trending top skills for data analysts in the US in 2023.*
+
+### Insights
+  - Throughout 2023, SQL remains the most demanded skill for Data Analysts, consistently maintaining a likelihood above 60%. This reinforces the importance of SQL in data analysis for database management and querying capabilities.
+  - Stable Demand for Excel, Fluctuations in Python and Tableau:
+      - Excel maintains a steady demand, hovering around 40-45%, indicating its essential role in data manipulation and analysis.
+      - Python and Tableau exhibit fluctuations in demand. Python's likelihood shows an increase toward the end of the year, suggesting a growing emphasis on programming and data analysis capabilities. Tableau shows slight variability but remains an important tool for data visualization.
+   - Power BI remains relatively low in demand compared to other skills, with a likelihood around 20%. While still a valuable tool, it appears less critical compared to SQL, Excel, Python, and Tableau for Data Analysts in the US during this period.
+
 ## 3. How well do jobs and skills pay for Data Analysts?
 ## 4. What are the most optimal skills to learn for Data Analysts?
 
