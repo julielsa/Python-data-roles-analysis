@@ -22,7 +22,8 @@ Python: The core tool for my analysis, enabling me to process and extract key in
 
 # Data Prep and Cleaning
   ### - Import and Clean Data
-    I start by importing necessary libraries and loading the dataset, followed by initial data cleaning tasks to ensure data quality.
+  I start by importing necessary libraries and loading the dataset, followed by initial data cleaning tasks to ensure data quality.
+
 
 ```python
 # Importing Libraries
