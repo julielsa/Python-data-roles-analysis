@@ -52,7 +52,24 @@ df_US = df[df['job_country'] == 'United States']
 Each Jupyter notebook for this project is aimed at analyzing specific aspects of the data job market. 
 Here’s how I approached each question:
 
-1. What are the most in-demand skills for the top 3 most popular data roles?
+## 1. What are the most in-demand skills for the top 3 most popular data roles?
+To identify the most in-demand skills for the top three data roles, I filtered job positions to determine the most popular roles and extracted the top five skills for each. This analysis reveals the key skills for each prominent job title, helping to understand which skills to prioritize based on the targeted role.
+
+Link to my notebook for more details: [2_Skill_Demand] (https://github.com/julielsa/Python-data-roles-analysis/blob/main/2_Skill_Demand.ipynb)
+
+### Visualize Data
+
+```python
+fig, ax = plt.subplots(len(job_titles), 1)
+
+
+for i, job_title in enumerate(job_titles):
+    df_plot = df_skills_perc[df_skills_perc['job_title_short'] == job_title].head(5)[::-1]
+    sns.barplot(data=df_plot, x='skill_percent', y='job_skills', ax=ax[i], hue='skill_count', palette='dark:b_r')
+
+plt.show()
+```
+
 2. How are in-demand skills trending for Data Analysts?
 3. How well do jobs and skills pay for Data Analysts?
 4. What are the most optimal skills to learn for Data Analysts?
