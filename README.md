@@ -113,7 +113,34 @@ plt.show()
    - Power BI remains relatively low in demand compared to other skills, with a likelihood around 20%. While still a valuable tool, it appears less critical compared to SQL, Excel, Python, and Tableau for Data Analysts in the US during this period.
 
 ## 3. How well do jobs and skills pay for Data Analysts?
+To identify the highest-paying roles and skills, I focused on job listings in the United States and analyzed their median salaries. I first examined the salary distributions for common data roles such as Data Scientist, Data Engineer, and Data Analyst to understand which positions offer the highest compensation.
+
+View my notebook with detailed steps here: [4_Salary_Analysis](https://github.com/julielsa/Python-data-roles-analysis/blob/main/4_Salary_Analysis.ipynb)
+
+### Visualize Data
+
+```python
+sns.boxplot(data=df_US_top6, x='salary_year_avg', y='job_title_short', order=job_order)
+
+ticks_x = plt.FuncFormatter(lambda y, pos: f'${int(y/1000)}K')
+plt.gca().xaxis.set_major_formatter(ticks_x)
+plt.show()
+
+```
+### Results
+![Salary Distributions of Data Jobs in the US](https://github.com/julielsa/Python-data-roles-analysis/blob/main/Visualization%20images/Salary%20distribution.png)
+
+### Insights
+
 ## 4. What are the most optimal skills to learn for Data Analysts?
+
+View my notebook with detailed steps here:
+
+### Visualize Data
+
+### Results
+
+### Insights
 
 # Learnings and Takeaways
 
