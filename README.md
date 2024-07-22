@@ -74,10 +74,16 @@ plt.show()
 *Bar graph visualizing the salary for the top 3 data roles and their top 5 skills associated with each.*
 
 ### Insights
+  - SQL is the most in-demand skill across all roles. For Data Analysts, Data Engineers, and Data Scientists, SQL appears as a highly requested skill, with 51%, 68%, and 51% respectively. This indicates that SQL is fundamental across various data roles, underscoring the importance of database management and querying skills in the data industry.
+  - Python is notably prominent for Data Engineers and Data Scientists, with a 65% and 72% likelihood respectively. This highlights Python's versatility and essential role in both data engineering tasks, like data pipeline creation, and data science tasks, such as machine learning and data analysis. For Data Analysts, Python also shows a significant presence at 27%, illustrating its growing importance in analytical roles.
+  - Specific Tools and Technologies for Each Role: The chart shows distinct skills that are uniquely emphasized in different roles. For example:
+    - Data Analysts: Excel (41%) and Tableau (28%) are more specific to this role, reflecting the need for data visualization and spreadsheet proficiency.
+    - Data Engineers: AWS (43%) and Azure (32%) are key, indicating the importance of cloud computing skills for managing data infrastructure.
+    - Data Scientists: R (24%) and SAS (24%) are listed, which are commonly used in statistical analysis and advanced analytics, highlighting the role's focus on in-depth data analysis and modeling.
 
-2. How are in-demand skills trending for Data Analysts?
-3. How well do jobs and skills pay for Data Analysts?
-4. What are the most optimal skills to learn for Data Analysts?
+## 2. How are in-demand skills trending for Data Analysts?
+## 3. How well do jobs and skills pay for Data Analysts?
+## 4. What are the most optimal skills to learn for Data Analysts?
 
 # Learnings and Takeaways
 
