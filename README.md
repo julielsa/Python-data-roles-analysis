@@ -129,6 +129,35 @@ plt.show()
 ```
 ### Results
 ![Salary Distributions of Data Jobs in the US](https://github.com/julielsa/Python-data-roles-analysis/blob/main/Visualization%20images/Salary%20distribution.png)
+*Box plot visualizing the salary distributions for the top 6 data job titles.*
+
+### Insights
+  - Senior Data Scientist and Senior Data Engineer roles have higher median salaries and wider salary ranges compared to their non-senior counterparts. This indicates that experience and seniority in data roles significantly impact earning potential.
+  - Senior Data Scientist and Senior Data Engineer positions exhibit considerable salary variability, with a noticeable number of outliers extending beyond the $300K mark. This suggests that while senior positions generally offer higher salaries, the pay can vary greatly based on factors like company, location, and individual expertise.
+  - Data Scientist positions, even at non-senior levels, show a substantial median salary and a wide range of earnings. This underscores the value and demand for data scientists in the market, making it a lucrative career choice within the data field.
+
+## Highest Paid & Most Demanded Skills for Data Analysts
+Next, I refined my analysis to focus specifically on data analyst roles. I examined the highest-paid and most in-demand skills within this category. To illustrate these findings, I created two bar charts.
+
+### Visualize Data
+```python
+
+fig, ax = plt.subplots(2, 1)  
+
+# Top 10 Highest Paid Skills for Data Analysts
+sns.barplot(data=df_DA_top_pay, x='median', y=df_DA_top_pay.index, hue='median', ax=ax[0], palette='dark:b_r')
+
+# Top 10 Most In-Demand Skills for Data Analystsr')
+sns.barplot(data=df_DA_skills, x='median', y=df_DA_skills.index, hue='median', ax=ax[1], palette='light:b')
+
+plt.show()
+
+```
+### Results
+Here's the breakdown of the highest-paid & most in-demand skills for data analysts in the US:
+
+![The Highest Paid & Most In-Demand Skills for Data Analysts in the US](https://github.com/julielsa/Python-data-roles-analysis/blob/main/Visualization%20images/Highest%20paid%20vs%20highest%20in%20demand.png)
+*Two separate bar graphs visualizing the highest-paid skills and most in-demand skills for data analysts in the US.*
 
 ### Insights
 
