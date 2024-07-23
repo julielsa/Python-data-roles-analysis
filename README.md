@@ -171,12 +171,45 @@ View my notebook with detailed steps here: [5_Optimal_Skills](https://github.com
 
 ### Visualize Data
 
+```python
+from matplotlib.ticker import PercentFormatter
+
+# Create a scatter plot
+scatter = sns.scatterplot(
+    data=df_DA_skills_tech_high_demand,
+    x='skill_percent',
+    y='median_salary',
+    hue='technology',  # Color by technology
+    palette='bright',  # Use a bright palette for distinct colors
+    legend='full'  # Ensure the legend is shown
+)
+plt.show()
+
+```
 ### Results
 
+![Most Optimal Skills for Data analyst in the US](https://github.com/julielsa/Python-data-roles-analysis/blob/main/Visualization%20images/Optimal%20skills%20for%20DA%20.png)
+*A scatter plot visualizing the most optimal skills (high paying & high demand) for data analysts in the US with color labels for technology.*
+
 ### Insights
+  - SQL stands out as both highly demanded and well-paid, making it a crucial skill for data analysts. It has a high percentage of job postings and a median yearly salary close to $90K.
+  - Python is another highly valuable skill with a high median salary (around $98K) and significant demand. Alongside Python, R also commands a high salary and moderate demand, making programming languages essential for data analysts.
+  - Tableau and Power BI are important tools for data analysts, with Tableau offering a higher median salary. Despite its lower salary, Excel remains a highly demanded skill, indicating its widespread use and importance in the field.
+    
+# Learnings 
+Throughout this project, I deepened my understanding of the data analyst job market and enhanced my technical skills in Python, especially in data manipulation and visualization. Here are a few specific things I learned:
 
-# Learnings and Takeaways
+  - Advance Python:
+  - Importance of Data Cleaning:
+  - Strategic Analysis:
 
-# Challenges
+# Overall Takeaways
+  - Skill Demand and Salary Correlation:
+The analysis reveals a strong correlation between the demand for certain skills and their associated salaries. Skills such as SQL and Python not only appear frequently in job postings but also offer higher median salaries. This indicates that mastering high-demand skills can significantly enhance career prospects and earning potential for data analysts.
+  - Diverse Skillsets:
+  The case study highlights the importance of a diverse skill set for data analysts. While technical skills like programming (Python, R) and database management (SQL, SQL Server) are crucial, proficiency in data visualization tools (Tableau, Power BI) and even traditional tools (Excel) remains highly valued. A well-rounded skill set can provide a competitive edge in the job market.
+  - Evolving Industry trends:
+The dynamic data analysis field requires staying updated with emerging technologies like cloud computing (e.g., Oracle) and data manipulation tools (e.g., dplyr, GitLab). Continuously upgrading skills is essential for long-term career growth and adaptability.
 
 # Conclusion
+These learnings emphasize the need for continuous skill development, adaptability to industry changes, and the strategic acquisition of high-demand skills to maximize career opportunities and potential earnings in the data analysis field. As the market evolves, ongoing analysis is crucial to stay ahead in data analytics. This project provides a solid foundation for future explorations and highlights the importance of continuous learning and adaptation in the data field.
