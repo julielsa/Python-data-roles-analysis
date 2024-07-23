@@ -199,9 +199,9 @@ plt.show()
 # Learnings 
 Throughout this project, I deepened my understanding of the data analyst job market and enhanced my technical skills in Python, especially in data manipulation and visualization. Here are a few specific things I learned:
 
-  - Advance Python:
-  - Importance of Data Cleaning:
-  - Strategic Analysis:
+  - Advance Python:  Using libraries like Pandas for data manipulation, Seaborn and Matplotlib for visualization, and other Python tools enabled me to perform complex data analysis tasks efficiently.
+  - Importance of Data Cleaning:  I learned that thorough data cleaning and preparation are essential for ensuring accurate insights, highlighting its crucial role before conducting any analysis.
+  - Strategic Analysis: This project underscored the importance of aligning skills with market demand. Understanding the relationship between skill demand, salary, and job availability allows for more strategic career planning in the tech industry.
 
 # Overall Takeaways
   - Skill Demand and Salary Correlation:
