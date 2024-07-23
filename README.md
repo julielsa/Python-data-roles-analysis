@@ -160,10 +160,14 @@ Here's the breakdown of the highest-paid & most in-demand skills for data analys
 *Two separate bar graphs visualizing the highest-paid skills and most in-demand skills for data analysts in the US.*
 
 ### Insights
-
+  - High-Paying Niche Skills: Skills like dplyr, bitbucket, gitlab, and solidity are among the highest-paid, with median salaries approaching $200K. These niche skills are highly valued and can significantly boost the earning potential of data analysts.
+  - Commonly in-demand skills such as Python, Tableau, and R are not necessarily the highest-paid. While they are essential and frequently requested in job postings, the median salaries for these skills are lower compared to more specialized tools and technologies.
+  - Technologies like Hugging Face, Couchbase, and Ansible, which are not as commonly listed as in-demand, are among the highest-paying skills. This suggests that specializing in emerging or advanced technologies can lead to higher salaries, even if these skills are not the most frequently requested by employers.
+    
 ## 4. What are the most optimal skills to learn for Data Analysts?
+To pinpoint the most valuable skills to learn—those that are both highly paid and in high demand—I analyzed the percentage of demand for each skill and their median salaries. This allows for easy identification of the top skills to focus on.
 
-View my notebook with detailed steps here:
+View my notebook with detailed steps here: [5_Optimal_Skills](https://github.com/julielsa/Python-data-roles-analysis/blob/main/5_Optimal_Skills.ipynb)
 
 ### Visualize Data
 
